@@ -2,7 +2,6 @@
 	'use strict';
 
 	$('a.page-scroll').click(function() {
-    console.log('in here');
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -11,6 +10,41 @@
           scrollTop: target.offset().top - 40
         }, 900);
         return false;
+      }
+    }
+  });
+
+  
+  $(document).ready(function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    if (window.location.href.indexOf("#memes") > -1) {
+      if (location.pathname.replace(/^\//, '') == document.getElementById('a-memes').pathname.replace(/^\//, '') && location.hostname == document.getElementById('a-memes').hostname) {
+        var target = $(document.getElementById('a-memes').hash);
+        target = target.length ? target : $('[name=' + document.getElementById('a-memes').hash.slice(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top - 40
+          }, 900);
+          return false;
+        }
+      }
+    }
+  });
+
+  $(document).ready(function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    if (window.location.href.indexOf("#album-cover") > -1) {
+      if (location.pathname.replace(/^\//, '') == document.getElementById('a-albumcover').pathname.replace(/^\//, '') && location.hostname == document.getElementById('a-albumcover').hostname) {
+        var target = $(document.getElementById('a-albumcover').hash);
+        target = target.length ? target : $('[name=' + document.getElementById('a-albumcover').hash.slice(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top - 40
+          }, 900);
+          return false;
+        }
       }
     }
   });
