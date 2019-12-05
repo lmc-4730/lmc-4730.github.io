@@ -8255,3 +8255,21 @@ header {
 .scaling-image {
   width: 100%;
   display: inline-block; }
+
+#video {
+  width: 504px;
+  height: 284px;
+}
+
+.video-mask {
+  width: 504px;
+  height: 284px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  transform: translate(283px, -339px)
+}
+
+.item {
+  position: relative;
+}
