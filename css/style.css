@@ -8272,3 +8272,7 @@ header {
 .item {
   position: relative;
 }
+
+.slider-item1:before {
+  content: "";
+}
