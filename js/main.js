@@ -1,8 +1,19 @@
 (function($) {
-
 	'use strict';
 
-	// bootstrap dropdown hover
+	$('a.page-scroll').click(function() {
+    console.log('in here');
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 40
+        }, 900);
+        return false;
+      }
+    }
+  });
 
   // loader
   var loader = function() {
