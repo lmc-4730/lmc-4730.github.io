@@ -8267,7 +8267,7 @@ header {
   border-radius: 10px;
   overflow: hidden;
   position: absolute;
-  transform: translate(283px, -339px)
+  transform: translate(283px, -339px);
 }
 
 .item {
