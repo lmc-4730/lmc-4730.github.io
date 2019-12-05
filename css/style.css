@@ -7617,7 +7617,6 @@ header {
   min-height: 700px;
   position: relative; }
   .slider-item:before {
-    content: "";
     position: absolute;
     top: 0;
     height: 500px;
@@ -7990,7 +7989,7 @@ header {
 
 @media (min-width: 768px) {
   .block-41 .block-41-text {
-    font-size: 20px; } }
+    font-size: 16px; } }
 
 .block-6 {
   margin-bottom: 30px; }
